@@ -1,5 +1,11 @@
 #!/bin/bash
+
+# Passed validation in Cloud Shell on 2/25/2025
+
+# <FullScript>
+
 # Replace the placeholders variable values (<your_resource_group>, <your_netapp_account_name>, <your_capacity_pool_name>, and <your_volume_name>) with the appropriate values for your Azure environment.
+
 RESOURCE_GROUP="<your_resource_group>"
 NETAPP_ACCOUNT_NAME="<your_netapp_account_name>"
 CAPACITY_POOL_NAME="<your_capacity_pool_name>"
@@ -38,3 +44,6 @@ if [ "$TOTAL_IP_COUNT" -gt 1000 ]; then
 else
     echo "The number of IPs is within the limit for Basic network features."
 fi
+
+# The script is used in the following file, adding or removing lines may require you update the range value in this files
+# articles\virtual-machine-scale-sets\tutorial-autoscale-cli.md
